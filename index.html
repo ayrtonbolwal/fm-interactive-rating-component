@@ -19,11 +19,44 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
+
   <body>
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-    You selected
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
+    <main class="target survey flag-survey" id="surveyTarget">
+      <div class="target__image">
+        <img src="./images/icon-star.svg" alt="" />
+      </div>
+
+      <div class="target__desc">
+        <h1>How did we do?</h1>
+        <p class="target__desc-text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+
+      <form class="target__calif" id="califForm">
+        <label> <input type="radio" name="cal" value="1" /> 1 </label>
+        <label> <input type="radio" name="cal" value="2" /> 2 </label>
+        <label> <input type="radio" name="cal" value="3" /> 3 </label>
+        <label> <input type="radio" name="cal" value="4" /> 4 </label>
+        <label> <input type="radio" name="cal" value="5" /> 5 </label>
+      </form>
+
+      <button id="submitButton" class="target__calif-submit">Submit</button>
+    </main>
+
+    <section class="target result flag-result" id="resultTarget">
+      <img src="./images/illustration-thank-you.svg" alt="" />
+      <p class="result__cal">
+        You selected <span id="pointSpace"></span> out of 5
+      </p>
+      <h2>Thank you!</h2>
+      <p class="target__desc-text">
+        We appreciated you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </section>
+
+    <script src="script/script.js"></script>
   </body>
 </html>
